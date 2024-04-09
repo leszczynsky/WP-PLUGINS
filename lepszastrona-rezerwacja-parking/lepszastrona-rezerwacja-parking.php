@@ -7,7 +7,7 @@
  */
 
 if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly
+    exit;
 }
 
 function ls_enqueue_scripts() {
@@ -139,7 +139,7 @@ add_action('woocommerce_before_calculate_totals', 'ls_set_custom_cart_item_price
 
 function ls_add_order_item_meta($item, $cart_item_key, $values, $order) {
     if (isset($values['ls_custom_data'])) {
-        // Mapa dla lepszego wyświetlania kluczy metadanych
+        // Mapa dla lepszego wyświetlania kluczy metadanych w podglądzie zamówienia
         $labels = array(
             'arrival' => 'Przyjazd',
             'departure' => 'Wyjazd',
