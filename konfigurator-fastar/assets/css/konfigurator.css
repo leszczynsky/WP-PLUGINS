@@ -1,0 +1,290 @@
+@media only screen and (max-width: 1024px) {
+    .konfigurator-wrapper {
+        flex-direction: column;
+    }
+
+    .sticky {
+        width: 100% !important;
+    }
+
+  }
+
+.konfigurator-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.konfigurator-wrapper span{
+    color: black;
+}
+
+.konfigurator-wrapper strong {
+    color: black;
+}
+
+.konfigurator-wrapper div {
+    color: black;
+}
+
+.konfigurator-wrapper a {
+    color: black !important;
+}
+
+
+.title.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.konfigurator-column {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.wrapper {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.term-title {
+
+    font-size: 19px;
+    color: white !important;
+}
+
+a strong {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.gradient {
+    --tw-gradient-from: white;
+    --tw-gradient-to: #FFCF19;
+    background-image: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+    height: 0.125rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.ulsuga-title strong {
+
+    font-size: 19px;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 7rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 15px;
+    background: linear-gradient(to bottom, 
+    #fbbf24, 
+    #FFCF19);
+    border: 3px solid #FFCF19;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: border-color 0.3s; /* Animacja przejścia dla zmiany koloru ramki */
+    width: 350px;
+}
+
+
+.formularz-column form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Tworzy dwie kolumny o równej szerokości */
+    gap: 10px;  /* Odstęp między kolumnami i rzędami */
+}
+
+.formularz-column input[type="text"],
+.formularz-column input[type="email"],
+.formularz-column textarea,
+.formularz-column input[type="submit"] {
+    width: 100%; /* Szerokość 100% dostępnej przestrzeni */
+    padding: 10px 15px; /* Wypełnienie wewnętrzne dla komfortowego wpisywania */
+    border: none; /* Brak obramowania */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    font-size: 16px; /* Rozmiar czcionki */
+    transition: 0.3s ease; /* Płynne przejście dla efektów */
+}
+
+/* Efekt podświetlenia po najechaniu */
+.formularz-column input[type="text"]:hover,
+.formularz-column input[type="email"]:hover,
+.formularz-column textarea:hover {
+    background-color: #e9e9e9;
+}
+
+/* Efekt podświetlenia podczas fokusowania */
+.formularz-column input[type="text"]:focus,
+.formularz-column input[type="email"]:focus,
+.formularz-column textarea:focus {
+    background-color: #e9e9e9;
+    outline: none; /* Usunięcie domyślnego konturu podczas fokusowania */
+}
+
+/* Styl przycisku Wyślij */
+.formularz-column input[type="submit"] {
+    background-color: #FFCF19; /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    cursor: pointer; /* Kursor ręki podczas najechania */
+    grid-column: span 2; /* Rozciąga przycisk na dwie kolumny, czyli na całą szerokość */
+    border: solid 3px white;
+    font-weight: bold;
+}
+
+/* Styl przycisku Wyślij */
+.formularz-column input[name="kod_rabatowy"] {
+    grid-column: span 2; /* Rozciąga przycisk na dwie kolumny, czyli na całą szerokość */
+}
+
+.formularz-column form label {
+    grid-column: span 2; /* Rozciąga przycisk na dwie kolumny, czyli na całą szerokość */
+    color: white;
+}
+
+.formularz-column form label input[type="checkbox"]{
+        accent-color: black; /* Ustawia kolor zaznaczenia na czarny */
+        outline-width: 0px;
+}
+
+/* Efekt podświetlenia przycisku podczas najechania */
+.formularz-column input[type="submit"]:hover {
+    scale: 1.01;
+}
+
+.podsumowanie {
+    border-bottom: solid 1px #e5e7eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.podsumowanie-element-pakiet {
+
+    order: 2;
+}
+
+
+.podsumowanie-element-checkbox {
+
+    order: 1;
+}
+
+.podsumowanie > div {
+    padding-bottom: 1rem;
+}
+
+.podsumowanie-title {
+
+    font-size: 17px;
+}
+
+.suma div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.suma {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #e5e7eb;
+}
+
+.usluga-block-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; /* Odstępy między kolumnami i rzędami */
+
+}
+
+/* Podstawowy wygląd dla każdego bloku z usługą */
+.usluga-block {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* Ukryj domyślny radio button */
+.usluga-block input[type="radio"].hidden {
+    display: none;
+}
+
+.usluga-block input[type="checkbox"].hidden {
+    display: none;
+}
+
+/* Podstawowy wygląd etykiety */
+.usluga-block label {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: linear-gradient(to bottom, 
+    #fbbf24, 
+    #FFCF19);
+    border: 3px solid #FFCF19;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    transition: border-color 0.3s; /* Animacja przejścia dla zmiany koloru ramki */
+}
+
+/* Wygląd etykiety, gdy radio button jest zaznaczony */
+.usluga-block input[type="radio"].hidden:checked + label {
+    border-color: white /* Kolor ramki dla zaznaczonej usługi */
+}
+
+
+/* Wygląd etykiety, gdy radio button jest zaznaczony */
+.usluga-block input[type="checkbox"].hidden:checked + label {
+    border-color: white; /* Kolor ramki dla zaznaczonej usługi */
+}
+
+.pakiety-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*animacje*/
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.konfigurator-wrapper {
+    opacity: 0; /* Start with blocks invisible */
+    animation-name: slideInDown;
+    animation-duration: 0.5s; /* How long the animation takes */
+    animation-fill-mode: forwards; /* Keeps the element in the end state after animation */
+    /* We'll add delay in inline styles */
+}
+
+/* Example for adding delay in PHP code */
+
+
+.podsumowanie-element {
+    opacity: 0; /* Start with blocks invisible */
+    animation-name: slideInDown;
+    animation-duration: 0.5s; /* How long the animation takes */
+    animation-fill-mode: forwards; /* Keeps the element in the end state after animation */
+    /* We'll add delay in inline styles */
+}

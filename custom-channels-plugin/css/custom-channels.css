@@ -1,0 +1,70 @@
+#package-selection {
+  align-content: center;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.package-button {
+  display: inline-block;
+  min-width: 120px;
+  width: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.package-button.active {
+  background-color: #ffcf19;
+  color: #000;
+}
+
+.package-button:hover {
+  background-color: #fff;
+  color: #ffcf19;
+}
+
+#channels-container {
+  float: left;
+  padding-left: 20px;
+}
+
+.channel-item {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 2px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  background-color: #000;
+  border: 2px solid #ffcf19;
+  border-radius: 10px;
+}
+
+/* Dodaj tło z lekkim powiększeniem */
+.channel-item::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  opacity: 1; /* Tło zawsze widoczne */
+}
+
+.channel-item img {
+  width: 92px;
+  height: 58px;
+}
+
+.channel-item:hover {
+  transform: scale(1.02);
+}
