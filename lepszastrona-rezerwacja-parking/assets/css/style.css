@@ -1,0 +1,60 @@
+/* Style dla formularza rezerwacji w kolorach #FFFFFF i #FFA511 */
+#ls-reservation-form {
+  color: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#ls-reservation-form .consent {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+#ls-reservation-form .consent input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#ls-reservation-form input[type="submit"] {
+  background-color: #ffa511;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#ls-reservation-form input[type="submit"]:hover {
+  background-color: #ffa511;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#ls-reservation-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#ls-reservation-form input[type="date"],
+#ls-reservation-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+
+#ls-price-calculation {
+  color: #ffffff;
+  background-color: #ffa511;
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 4px;
+  display: none; /* Hide until price is calculated */
+}
